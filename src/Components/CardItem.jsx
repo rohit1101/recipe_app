@@ -1,12 +1,12 @@
 import React from "react"
+// import { Details } from "./Details.jsx"
 
 export function CardItem({ cardInfo }) {
-  console.log(cardInfo)
   return (
     <div>
       <p>{cardInfo.category}</p>
       <p>{cardInfo.id}</p>
-      <img loading="lazy" src={cardInfo.image} alt="zucchipakoda" />
+      <img loading="lazy" src={cardInfo.image} alt={cardInfo.name} />
       <p>{cardInfo.name}</p>
       <p>{cardInfo.description}</p>
       <p>{cardInfo.label}</p>
