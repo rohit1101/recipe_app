@@ -1,16 +1,31 @@
 import React from "react"
-// import { Details } from "./Details.jsx"
+import styles from "./CardItem.module.css"
 
 export function CardItem({ cardInfo }) {
   return (
-    <div>
-      <p>{cardInfo.category}</p>
-      <p>{cardInfo.id}</p>
-      <img loading="lazy" src={cardInfo.image} alt={cardInfo.name} />
-      <p>{cardInfo.name}</p>
-      <p>{cardInfo.description}</p>
-      <p>{cardInfo.label}</p>
-      <p>{cardInfo.price}</p>
+    <div className={styles.container}>
+      <div className={styles.imgc}>
+        <img
+          className={styles.img}
+          src={cardInfo.image}
+          alt={cardInfo.name}
+          width="300px"
+          height="200px"
+        />
+        <p className={styles.text}>{cardInfo.category}</p>
+      </div>
+      <div>
+        <p>{cardInfo.name}</p>
+      </div>
+      <div className="des">
+        <p>{cardInfo.description}</p>
+      </div>
+      <div>
+        <p>{cardInfo.label}</p>
+      </div>
+      <div>
+        <p>{`$${cardInfo.price}`}</p>
+      </div>
     </div>
   )
 }

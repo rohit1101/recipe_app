@@ -3,6 +3,8 @@ import { Card } from "./Components/Card.jsx"
 import "./App.css"
 import { getData } from "./api"
 
+import "./index.css"
+
 export class App extends React.Component {
   state = {
     inputText: "",
@@ -33,13 +35,15 @@ export class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container">
         <input type="text" onChange={this.handleChange} />
-        {this.state.inputText !== "" ? (
-          <Card recipes={this.state.filter_arr} />
-        ) : (
-          <Card recipes={this.state.recipe_arr} />
-        )}
+        <div>
+          {this.state.inputText !== "" ? (
+            <Card recipes={this.state.filter_arr} />
+          ) : (
+            <Card recipes={this.state.recipe_arr} />
+          )}
+        </div>
       </div>
     )
   }
