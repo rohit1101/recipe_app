@@ -11,7 +11,6 @@ export class App extends React.Component {
   async componentDidMount() {
     const res = await fetch(`http://starlord.hackerearth.com/recipe`)
     const data = await res.json()
-    console.log(data)
     this.setState({ recipe_arr: data })
   }
 

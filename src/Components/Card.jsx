@@ -5,7 +5,7 @@ export function Card({ recipes }) {
   return (
     <div>
       {recipes.map((item) => {
-        return <CardItem cardInfo={item} />
+        return <CardItem key={item.id} cardInfo={item} />
       })}
     </div>
   )
