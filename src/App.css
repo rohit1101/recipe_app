@@ -1,0 +1,20 @@
+input {
+  width: 21%;
+  outline: none;
+  padding: 3px 0;
+}
+
+label {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.p {
+  font-size: 3rem;
+  color: #3452e9;
+  text-decoration: none;
+}

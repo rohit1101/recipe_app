@@ -2,7 +2,7 @@ import React from "react"
 import { Card } from "./Components/Card.jsx"
 import "./App.css"
 import { getData } from "./api"
-
+import "./App.css"
 import "./index.css"
 
 export class App extends React.Component {
@@ -36,7 +36,13 @@ export class App extends React.Component {
   render() {
     return (
       <div className="container">
-        <input type="text" onChange={this.handleChange} />
+        <h1>Recipe Finder</h1>
+        <label>Search </label>
+        <input
+          type="text"
+          onChange={this.handleChange}
+          placeholder="Search Recipe"
+        />
         <div>
           {this.state.inputText !== "" ? (
             <Card recipes={this.state.filter_arr} />
@@ -44,6 +50,9 @@ export class App extends React.Component {
             <Card recipes={this.state.recipe_arr} />
           )}
         </div>
+        <footer className="foot">
+          Made with ❣️by <a href="https://github.com/rohit1101">Cloud_Dev</a>
+        </footer>
       </div>
     )
   }

@@ -1,0 +1,19 @@
+.intro {
+  padding: 0 5rem;
+  display: grid;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  color: rgb(252, 158, 170);
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #cfc7c7;
+}
+
+.intro p {
+  font-size: 1.8rem;
+  color: #cfc7c7;
+}

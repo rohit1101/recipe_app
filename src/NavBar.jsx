@@ -4,7 +4,11 @@ import { Link } from "@reach/router"
 export function NavBar() {
   return (
     <nav>
-      <Link to="/">Home</Link>
+      <p>
+        <Link className="p" to="/">
+          🏡
+        </Link>
+      </p>
     </nav>
   )
 }
