@@ -1,10 +1,12 @@
 import React from "react"
+
+import { Link, Router } from "@reach/router"
 import styles from "./CardItem.module.css"
 
 export function CardItem({ cardInfo }) {
   return (
     <div className={styles.container}>
-      <div className={styles.imgc}>
+      <div className={styles.img}>
         <img
           className={styles.img}
           src={cardInfo.image}
