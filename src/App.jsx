@@ -51,7 +51,12 @@ export class App extends React.Component {
           )}
         </div>
         <footer className="foot">
-          Made with ❣️by <a href="https://github.com/rohit1101">Cloud_Dev</a>
+          Made with{" "}
+          <span role="img" aria-label="s">
+            ❣️
+          </span>
+          by
+          <a href="https://github.com/rohit1101">Cloud_Dev</a>
         </footer>
       </div>
     )

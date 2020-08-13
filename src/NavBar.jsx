@@ -5,9 +5,7 @@ export function NavBar() {
   return (
     <nav>
       <p>
-        <Link className="p" to="/">
-          🏡
-        </Link>
+        <Link className="p" to="/"></Link>
       </p>
     </nav>
   )
