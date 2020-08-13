@@ -1,6 +1,5 @@
 import React from "react"
-
-import { Link, Router } from "@reach/router"
+import { Link } from "@reach/router"
 import styles from "./CardItem.module.css"
 
 export function CardItem({ cardInfo }) {
@@ -28,6 +27,7 @@ export function CardItem({ cardInfo }) {
       <div>
         <p>{`$${cardInfo.price}`}</p>
       </div>
+      <Link to={`details/${cardInfo.id}`}>Details</Link>
     </div>
   )
 }

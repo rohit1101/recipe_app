@@ -1,10 +1,9 @@
 import React from "react"
-import { Link, Router } from "@reach/router"
 
-export function Details() {
+export function Details({ state }) {
   return (
     <div>
-      <p>This is from details page.</p>
+      <p>This is from details page..</p>
     </div>
   )
 }

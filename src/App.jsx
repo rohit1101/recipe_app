@@ -1,6 +1,5 @@
 import React from "react"
 import { Card } from "./Components/Card.jsx"
-import { Link } from "@reach/router"
 import "./App.css"
 import { getData } from "./api"
 
