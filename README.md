@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 ### api is blocked.
-In the project directory, you can run:
+In the project directory, you can run(first hackathon):
 
 ### `yarn start`
 
